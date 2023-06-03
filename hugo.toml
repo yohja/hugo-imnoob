@@ -1,0 +1,7 @@
+baseURL = 'https://blog.imnoob.net/'
+languageCode = 'en-us'
+title = 'ImNoob'
+theme = 'relearn'
+
+[outputs]
+home = [ "HTML", "RSS", "SEARCH"]
