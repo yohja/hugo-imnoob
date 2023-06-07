@@ -44,4 +44,4 @@ collections:
       - {label: "Sharing", name: "share", widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown", required: true}
     editor:
-      preview: trues
+      preview: true
