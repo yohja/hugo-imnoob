@@ -2,3 +2,7 @@
 	path = themes/relearn
 	url = https://github.com/McShelby/hugo-theme-relearn.git
 	branch = main
+[submodule "themes/congo"]
+	path = themes/congo
+	url = https://github.com/jpanther/congo.git
+	branch = stable
