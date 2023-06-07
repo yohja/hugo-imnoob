@@ -6,3 +6,5 @@ theme = 'relearn'
 [outputs]
 home = [ "HTML", "RSS", "SEARCH"]
 
+[params]
+    disableLandingPageButton = false
