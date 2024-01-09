@@ -1,4 +1,5 @@
 ---
+title: "ImNoob's blog"
 description: "short introduction"
 layout: "simple"
 cascade:
