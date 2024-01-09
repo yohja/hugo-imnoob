@@ -36,7 +36,9 @@ The "SA" account is a powerful login that has unrestricted access to the SQL Ser
 * **Step 6:** Open another Command Prompt window and connect to SQL Server using the "SQLCMD" utility.
 * **Step 7:** Execute T-SQL commands to reset the "SA" password. For example:
 
-  `ALTER LOGIN sa WITH PASSWORD = '<new_password>';`
+```sql
+  ALTER LOGIN sa WITH PASSWORD = '<new_password>';
+```
 
 ### 3. Using SQL Server Authentication in Emergency Mode:
 
