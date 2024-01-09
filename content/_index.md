@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Congo! :tada:"
+title: "ImNoob's stuffs! :tada:"
 description: "This is a demo of the Congo theme for Hugo."
 ---
 
