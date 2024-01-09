@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 archetype: chapter
 title: 'Recovering "SA" Password on SQL Server: A Step-by-Step Guide'
 date: 2024-01-09T08:56:23.599Z
