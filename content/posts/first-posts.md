@@ -8,4 +8,5 @@ image: /images/uploads/1.jpg
 comments: true
 share: true
 ---
+{{< figure src="/images/uploads/2.jpg" title="sample title" >}}
 this is first post
