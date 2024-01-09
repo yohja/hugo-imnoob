@@ -1,29 +1,20 @@
 ---
-#title: "Welcome brother! :tada:"
-description: "This is a demo of the Congo theme for Hugo."
+title: "About"
+description: "short introduction"
+layout: "simple"
+cascade:
+  showEdit: false
+  showSummary: true
 ---
 
-{{< lead >}}
-A powerful, lightweight theme for Hugo built with Tailwind CSS.
-{{< /lead >}}
+Hello, fellow adventurers, learners, and enthusiasts! I'm thrilled to welcome you to my humble corner of the internet, where I'll be sharing my journey as an enthusiastic beginner in various domains. ImNoob's Personal Blog is a place where I document my experiences, challenges, and discoveries as I dive headfirst into the vast realms of knowledge.
 
-This is a demo site built entirely using Congo. It also contains a complete set of [theme documentation]({{< ref "docs" >}}). Congo is flexible and is great for both static page-based content (like this demo) or a traditional blog with a feed of recent posts.
+Here, you'll find a collection of articles and reflections on my quest to conquer the unfamiliar. Whether it's delving into the depths of coding, exploring the intricacies of art and design, or venturing into the wonders of photography, I'm here to share my triumphs, failures, and everything in between.
 
-<div class="flex px-4 py-2 mb-8 text-base rounded-md bg-primary-100 dark:bg-primary-900">
-  <span class="flex items-center pe-3 text-primary-400">
-    {{< icon "triangle-exclamation" >}}
-  </span>
-  <span class="flex items-center justify-between grow dark:text-neutral-300">
-    <span class="prose dark:prose-invert">This is a demo of the <code id="layout">page</code> layout.</span>
-    <button
-      id="switch-layout-button"
-      class="px-4 !text-neutral !no-underline rounded-md bg-primary-600 hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
-    >
-      Switch layout &orarr;
-    </button>
-  </span>
-</div>
+But don't let the name fool you! While I may be a self-proclaimed "noob," I firmly believe that there is immense value in embracing our beginner's mindset. After all, it's in those initial stumbling steps that we lay the foundation for growth and transformation. So, together, let's embrace the adventure of learning, celebrate the beauty of imperfection, and relish the excitement of each new discovery.
 
-{{< figure src="festivities.svg" class="m-auto mt-6 max-w-prose" >}}
+This blog is not just about my personal journey but also an invitation for you to join me on this path of exploration. Whether you're a seasoned expert, a curious learner, or somewhere in between, I hope to create a space that inspires, educates, and sparks meaningful conversations.
 
-Explore the [sample pages]({{< ref "samples" >}}) to get a feel for what Congo can do. If you like what you see, check out the project on [Github](https://github.com/jpanther/congo) or read the [Installation guide]({{< ref "docs/installation" >}}) to get started.
+So, let's embark on this exciting adventure together! Join me as we navigate the twists and turns of the learning curve, celebrate the joy of progress, and build a supportive community that encourages us all to take bold steps towards our passions.
+
+Thank you for being here, and I can't wait to share this incredible journey with you!
