@@ -1,5 +1,4 @@
 ---
-title: "About"
 description: "short introduction"
 layout: "simple"
 cascade:
