@@ -8,6 +8,7 @@
 colorScheme = "congo"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
+homepage.layout = "page"
 
 enableSearch = true
 enableCodeCopy = true
