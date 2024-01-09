@@ -10,3 +10,6 @@ share: true
 ---
 {{< figure src="/images/uploads/2.jpg" title="sample title" >}}
 this is first post
+w﻿hat about second image on the same post? here it is!!
+{{< figure src="/images/uploads/1.jpg" title="sample title 2" >}}
+n﻿ow you see it all about images
