@@ -1,7 +1,7 @@
 ---
 title: Automating Power BI Report and Data Source Retrieval with PowerShell
 date: 2023-07-04T05:02:46.335Z
-draft: true
+draft: false
 categories: Power BI
 author: YohJawa
 comments: true
