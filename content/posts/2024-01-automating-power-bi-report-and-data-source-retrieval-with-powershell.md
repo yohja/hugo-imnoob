@@ -20,40 +20,52 @@ share: true
   * PowerShell installed on the machine.
   * Appropriate permissions to access the Power BI Report Server.
   * Knowledge of the Power BI Report Server URL.
-  * [R﻿eportingServiceTools](https://github.com/microsoft/ReportingServicesTools) PowerShell module installed on the machine
+  * [R﻿eportingServicesTools](https://github.com/microsoft/ReportingServicesTools) PowerShell module installed on the machine
 
 #### Connecting to the Power BI Report Server
 
 * Defining parameters needed for further execution of this script
 
 ```powershell
-  $﻿pbirsUri = "http://localhost/reports"
+$rsUri = "http://localhost/reports"
 $filter = "text-to-filter-from-report-name"
+$rsFolder = "/folder-contain-pbi-reports"
+
+#Importing ReportingServicesTools module
+Import-Module ReportingServicesTools
 ```
 
 #### Retrieving Power BI Reports
 
-* Describe how to retrieve a list of all Power BI reports from the Power BI Report Server.
+* Retrieve all Power BI Reports from report server URL and report folder defined in the previous step
 
   ```powershell
-
-
+  $rptLists = Get-RsRestFolderContent -ReportPortalUri $rsUri -RsFolder = $rsFolder -Recurse | Where-Object {$_.Type -wq "PowerBIReport"}
   ```
+
+
 
 #### Extracting Data Sources for Each Report
 
-* Walk through the process of extracting data sources for each Power BI report.
+* Loop through each Power BI Reports and extracting their data sources.
+
+  ```powershell
+  $rptDs = ForEach ($rpt in $rptLists) {
+    Get-RsRestItemRestItemDataSource -ReportPortalUri $rsUri -RsItem $rpt.Path
+  }
 
   ```
 
-  ```
+  c﻿
 
 #### Outputting the Results
 
-* Explain how to format and output the results, possibly into a CSV or other structured format.
+* Export the result to CSV files
 
   ```
-
+  #select specific field to export
+  $rptDs | Select Name, Path, DataModelDataSource | Where {$_.DataModelDataSource -ne Null}
+  $rptDs | Export-Csv $csvOutput -NoTypeInformation
   ```
 
 #### Conclusion
